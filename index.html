@@ -172,6 +172,13 @@ h2 {
 .install q { color: var(--text); quotes: "„" "”"; }
 :root[data-lang="en"] .install q { quotes: "“" "”"; }
 .dl-card code { font: 13px var(--f-mono); color: var(--text); }
+.support {
+  margin-top: 22px; display: flex; gap: 16px 24px; align-items: center; justify-content: space-between; flex-wrap: wrap;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 22px;
+}
+.support p { margin: 0; color: var(--dim); max-width: 46em; min-width: 0; }
+.support p b { color: var(--text); font-weight: 600; }
+.support .heart { color: #ff6b81; }
 .badge { font: 500 11px var(--f-mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--good); }
 pre.cmd {
   margin: 0; background: var(--night); border: 1px solid var(--line); border-radius: 6px;
@@ -419,6 +426,18 @@ make &amp;&amp; ./ionoprop-gui</pre>
     </div>
   </section>
 
+  <section class="block" id="tamogatas" style="padding-block: 0 64px; border-top: 0;">
+    <div class="wrap">
+      <div class="support">
+        <p>
+          <span class="hu"><b>Ha hasznos a program, támogathatod a fejlesztést.</b> Az IonoProp ingyenes marad, reklám nélkül; a támogatás a további munkát segíti.</span>
+          <span class="en"><b>If you find IonoProp useful, you can support its development.</b> It stays free and ad-free; support helps the work go on.</span>
+        </p>
+        <a class="btn primary" href="https://ko-fi.com/hg0mv" target="_blank" rel="noopener"><span class="heart" aria-hidden="true">♥</span><span class="hu">Támogatás (Ko-fi)</span><span class="en">Support (Ko-fi)</span></a>
+      </div>
+    </div>
+  </section>
+
   <section class="block" id="valtozasok">
     <div class="wrap">
       <div class="eyebrow"><span class="hu">Változások</span><span class="en">Changes</span></div>
@@ -527,7 +546,7 @@ make &amp;&amp; ./ionoprop-gui</pre>
   <div class="wrap">
     <div>
       <div class="call">73 de HG0MV</div>
-      <div>QTH KN07sp · <a href="mailto:qsl@hg0mv.hu"><span class="hu">E-mail küldése</span><span class="en">Send email</span></a></div>
+      <div>QTH KN07sp · <a href="mailto:qsl@hg0mv.hu"><span class="hu">E-mail küldése</span><span class="en">Send email</span></a> · <a href="https://ko-fi.com/hg0mv" target="_blank" rel="noopener"><span class="hu">Támogatás</span><span class="en">Support</span></a></div>
     </div>
     <div><span class="hu">IonoProp 0.9 · ingyenes rádióamatőr program</span><span class="en">IonoProp 0.9 · free amateur radio software</span></div>
   </div>
