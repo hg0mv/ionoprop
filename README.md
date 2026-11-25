@@ -1,4 +1,4 @@
-# IonoProp 0.9 – ionosphere map, HF band advisor, checked against real spots
+# IonoProp 0.9.1 – ionosphere map, HF band advisor, checked against real spots
 
 *Magyar leírás: [README.md](README.md)*
 
@@ -78,7 +78,7 @@ It is cross-compiled on Linux with MinGW-w64:
 ```
 sudo apt install mingw-w64 zip
 make windows     # win/IonoProp.exe and win/ionoprop-cli.exe
-make win-zip     # win/IonoProp-0.9-windows.zip (both programs + OLVASSEL.txt + README.txt)
+make win-zip     # win/IonoProp-0.9.1-windows.zip (both programs + OLVASSEL.txt + README.txt)
 ```
 
 Each `.exe` is a single file, with no DLLs and no installer
@@ -179,6 +179,14 @@ that one run and is not saved.
   own (★) targets. At most once every 3 hours for the same opening. On/off:
   `a`, or click "Alerts" in the header. The state is kept in `alerts.state`,
   so it does not repeat an alert after a restart.
+- **Meteor showers:** the "Meteor" line under Suggestion shows the active
+  or next meteor shower (e.g. Geminids, 14 December), the time to its peak,
+  the ZHR and the UTC hours when the radiant stands at least 25° high at
+  your QTH: that is when meteor scatter works on 6 and 2 m. On the day
+  before and after the peak you also get an alert (once a year per shower).
+- **Explanations:** the `?` button in the header (or the `?` key) explains
+  the values (SFI, Kp, MUF, foF2, LUF, Es, ZHR, colours…).
+- **Distances:** km or miles (`k`). The choice is saved.
 - **Language:** Hungarian or English (`n`, or the HU / EN button in the
   header). The choice is saved. The command-line program stays Hungarian.
 - **High-resolution screens:** on Windows it follows the system scaling
@@ -205,6 +213,8 @@ that one run and is not saved.
 | a, or click "Alerts" | band-opening alerts on/off |
 | n, or click HU / EN | language: Hungarian / English |
 | r | refresh data now |
+| k | distances: km / miles |
+| ?, or click the "?" button | explanations of the values |
 | F11 | full screen on/off |
 | Esc | in full screen: leave full screen; otherwise quit |
 | q | quit |
@@ -332,6 +342,9 @@ PSK Reporter check (see above).
 
 ## Changes
 
+- **0.9.1:** meteor shower calendar (with alerts), explanations of the
+  values, km / miles, gentler downloads from KC2G (at least 5 minutes even on
+  manual refresh, growing pauses after errors)
 - **0.9:** full-screen shack display mode (`F11`, `-F`, cycling map `-C`),
   Raspberry Pi support (small screens, `make autostart`), menu entry and
   icon on install
