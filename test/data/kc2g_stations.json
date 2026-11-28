@@ -1,0 +1,5 @@
+[{"cs":75,"fof2":"6.45","hmf2":"262.0","md":"3.12","mufd":"20.12","source":"giro","time":"2026-10-31T17:15:00","station":{"code":"PQ052","name":"Pruhonice","latitude":"50.0","longitude":"14.6"}},
+ {"cs":-1,"fof2":5.9,"hmf2":270,"mufd":18.0,"time":"2026-10-31 17:00:00","station":{"code":"RO041","name":"Rome","latitude":"41.9","longitude":"12.5"}},
+ {"cs":10,"fof2":4.1,"hmf2":null,"mufd":13.2,"time":"2026-10-31T17:15:00Z","station":{"code":"JR055","name":"Juliusruh","latitude":54.6,"longitude":13.4}},
+ {"cs":90,"fof2":7.2,"hmf2":250,"mufd":null,"time":"2026-10-31T16:45:00.000Z","station":{"code":"MHJ45","name":"Millstone Hill","latitude":"42.6","longitude":"288.5"}},
+ {"cs":50,"fof2":3.0,"time":"2026-10-31T17:15:00","station":{"code":"BAD","name":"No location"}}]

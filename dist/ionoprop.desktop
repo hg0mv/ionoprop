@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=IonoProp
+GenericName=HF propagation
+Comment=Ionoszféra-térkép és sávjavaslat / ionosphere map and HF band advisor
+Exec=@BIN@/ionoprop-gui
+Icon=@ICON@
+Terminal=false
+Categories=HamRadio;Science;Utility;

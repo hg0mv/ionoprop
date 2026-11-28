@@ -1,0 +1,25 @@
+# fordítás eredménye / build output
+*.o
+/ionoprop
+/ionoprop-gui
+test/test_parse
+test/test_predict
+test/test_validate
+test/test_es
+win/*.exe
+win/*.o
+win/IonoProp/
+*.zip
+*.tar.gz
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+android/keystore.properties
+*.jks
+*.keystore
+*.apk
+*.aab
+.idea/

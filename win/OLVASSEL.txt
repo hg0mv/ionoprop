@@ -1,0 +1,127 @@
+﻿IonoProp 0.9.1 – Windows-változat
+================================
+
+Ionoszféra-térkép és sávjavaslat rádióamatőröknek.
+Valós ionoszonda- és napadatokból megmutatja, melyik KF sáv merre van
+nyitva, 160 m-től 6 m-ig.
+
+INDÍTÁS
+-------
+1. Csomagold ki a zip-fájlt egy tetszőleges mappába
+   (pl. Dokumentumok\IonoProp).
+2. Kattints duplán az IonoProp.exe fájlra.
+3. Első indításkor a program megkérdezi a QTH lokátorodat
+   (pl. KN07sp). Írd be, és nyomj Entert.
+
+Telepíteni nem kell, és külön program sem kell hozzá.
+Windows 10 és 11 (64 bites) rendszeren működik.
+
+HA A WINDOWS FIGYELMEZTET
+-------------------------
+Az első indításkor a Windows SmartScreen kiírhatja:
+„A Windows megvédte a számítógépet”. Ez azért van, mert a program
+új, és nincs megvásárolt aláíró tanúsítványa.
+Kattints a „További információ” feliratra, majd a „Futtatás
+mindenképp” gombra.
+
+HASZNÁLAT
+---------
+  ← →  vagy egérgörgő   idő: -1 / +1 óra (24 órát előre)
+  ↑ ↓                   célterület kijelölése
+  M / F                 MUF- / foF2-térkép
+  1 … 9, 0, -, =        sávtérkép: 160, 80, 60, 40, 30, 20, 17, 15,
+                        12, 10, 8, 6 m   (c: 11 m)
+  U                     üzemmód: SSB → CW → FT8
+  T                     új célterület (lokátor, hívójel vagy prefix)
+  S                     a térképen kijelölt pont mentése
+  Delete                a kijelölt saját célterület törlése
+  H                     hosszú út ki/be
+  X                     rádió (Yaesu CAT, pl. FT-891) beállítása
+  jobb kattintás        a rádió a kattintott sávra áll
+  L                     saját lokátor megváltoztatása
+                        (vagy kattintás a „QTH: …” feliratra)
+  P                     valódi vételek (PSK Reporter) ki/be
+  A                     riasztás sávnyitáskor ki/be
+  N                     nyelv: magyar / angol (English)
+  F11                   teljes képernyő be/ki (Esc: kilépés belőle)
+  K                     távolság: km / mérföld
+  ?                     magyarázatok: mit jelentenek az értékek
+                        (vagy kattintás a fejlécben a ? gombra)
+  R                     adatok frissítése most
+  Q, Esc                kilépés
+  kattintás a térképen  új célpont azon a helyen
+
+A program 15 percenként magától frissít.
+
+METEORRAJOK
+-----------
+A Javaslat alatt a „Meteor” sor mutatja az aktív vagy a következő
+meteorrajt (pl. Geminidák, december 14.), a csúcsig hátralévő időt, a
+ZHR-t (óránkénti meteorszám) és azokat az UTC-órákat, amikor a rádiáns
+magasan áll: ekkor jó a meteorszórás 6 és 2 m-en. A csúcs körül riasztás
+is jön.
+
+RIASZTÁS
+--------
+Ha valami kinyílik, a térkép tetején lila sáv jelenik meg (és a gép
+sípol): sporadikus E 10 / 8 / 6 m-en, F2 nyitás 8 / 6 m-en, vagy ha a
+saját (★) célterületeid felé 20 és 10 m között kinyílik egy sáv.
+Ugyanarra legfeljebb 3 óránként szól. Kattintásra eltűnik.
+Ki/be: A billentyű, vagy kattintás a fejlécben a „Riasztás” feliratra.
+
+TELJES KÉPERNYŐ, SHACK-KIJELZŐ
+------------------------------
+F11: teljes képernyő be/ki. Ha egy külön monitoron állandóan futna, a
+parancsikon Cél mezőjében az IonoProp.exe után írd be:  -F -C 30
+(-F: teljes képernyőn indul, -C 30: a térkép 30 másodpercenként vált
+MUF, foF2, 40, 20, 15 és 10 m között).
+
+NAGYÍTOTT KIJELZŐ
+-----------------
+Ha a Windowsban 125% vagy 150% a nagyítás, a program magától követi,
+a betűk élesek maradnak.
+
+RÁDIÓVEZÉRLÉS (FT-891)
+----------------------
+Az X billentyűvel add meg a rádió portját és sebességét, pl. COM5,38400
+(az Eszközkezelőben a „Silicon Labs Dual CP2105 ... Enhanced” port; a
+sebesség a rádió 05-06 CAT RATE menüje). Utána a táblázatban egy sávra
+jobb gombbal kattintva a rádió arra a sávra áll. A program csak
+frekvenciát és üzemmódot állít, adásba nem kapcsol.
+
+SPORADIKUS E (Es)
+-----------------
+A lila jelek a térképen sporadikus E-felhők: olyan valódi vételek útjának
+közepe, amelyek az F2 réteggel nem jöhettek volna létre (rövid út, a MUF
+fölött). A „Javaslat” alatt az „Es most” sor mutatja, melyik sávon van
+éppen Es-nyitás, a „Rétegek” alatt pedig a közeli ionoszonda foEs-mérése
+látszik. Az Es előre nem jelezhető, csak az éppen zajló nyitás látszik.
+
+A 24 órás előrejelzés alján a Kp sor a NOAA előrejelzése: 5 fölött
+(piros) geomágneses vihar várható, ilyenkor a felső sávok gyengülnek.
+
+HOVÁ MENTI A BEÁLLÍTÁSOKAT?
+---------------------------
+  lokátor, beállítások:  %APPDATA%\IonoProp
+  letöltött adatok:      %LOCALAPPDATA%\IonoProp\cache
+A program törléséhez elég törölni a mappáját és ezt a két mappát.
+
+PARANCSSORI VÁLTOZAT
+--------------------
+Az ionoprop-cli.exe ugyanezt szövegesen írja ki. Parancssorból
+(cmd vagy PowerShell) indítsd, pl.:
+  ionoprop-cli.exe -l KN07sp
+  ionoprop-cli.exe -F 2      (24 órás előrejelzés a 2. célra)
+  ionoprop-cli.exe -h        (súgó)
+
+ADATFORRÁSOK
+------------
+KC2G (prop.kc2g.com), GIRO ionoszonda-hálózat, NOAA SWPC,
+PSK Reporter, Natural Earth. Köszönet nekik!
+
+LICENC
+------
+Az IonoProp szabad szoftver, GNU GPL 3.0 licenccel (LICENSE.txt).
+Szabadon használható, másolható és továbbadható.
+
+73 de HG0MV

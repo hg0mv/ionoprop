@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">IonoProp</string>
+    <string name="widget_desc">Sávjavaslat és napaktivitás / band advice and solar activity</string>
+</resources>

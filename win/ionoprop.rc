@@ -1,0 +1,30 @@
+/* IonoProp - Windows-erőforrások: ikon, manifeszt, verzióadatok */
+#include <winver.h>
+
+1 ICON "ionoprop.ico"
+1 24 "ionoprop.manifest"
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION     0,9,1,0
+PRODUCTVERSION  0,9,1,0
+FILEOS          VOS_NT_WINDOWS32
+FILETYPE        VFT_APP
+BEGIN
+  BLOCK "StringFileInfo"
+  BEGIN
+    BLOCK "040904B0"
+    BEGIN
+      VALUE "CompanyName",      "HG0MV"
+      VALUE "FileDescription",  "IonoProp - ionosphere map and HF band advisor"
+      VALUE "FileVersion",      "0.9.1"
+      VALUE "InternalName",     "IonoProp"
+      VALUE "OriginalFilename", "IonoProp.exe"
+      VALUE "ProductName",      "IonoProp"
+      VALUE "ProductVersion",   "0.9.1"
+    END
+  END
+  BLOCK "VarFileInfo"
+  BEGIN
+    VALUE "Translation", 0x409, 1200
+  END
+END

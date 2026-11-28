@@ -210,7 +210,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wr
   <div class="wrap">
     <a class="brand" href="#start">
       <img src="img/ikon.png" alt="" width="34" height="34">
-      <b>IonoProp</b><small>0.9</small>
+      <b>IonoProp</b><small>0.9.1</small>
     </a>
     <nav class="links" aria-label="Menü">
       <a href="#funkciok"><span class="hu">Funkciók</span><span class="en">Features</span></a>
@@ -314,6 +314,16 @@ footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wr
           <p><span class="hu">Gépen jobb kattintás egy sávra, és a rádió átáll a sávra, a választott üzemmód szokásos frekvenciájára. Adásba nem kapcsol.</span><span class="en">On the desktop, right-click a band and the radio tunes there, to the usual frequency of the chosen mode. It never keys the transmitter.</span></p>
         </div>
         <div class="feat new">
+          <div class="tag"><span class="hu">újdonság a 0.9.1-ben</span><span class="en">new in 0.9.1</span></div>
+          <h3><span class="hu">Meteorraj-naptár</span><span class="en">Meteor shower calendar</span></h3>
+          <p><span class="hu">Az aktív vagy a következő raj, a csúcs órára pontosan, a ZHR, és mely UTC-órákban jó a meteorszórás 6 és 2 m-en a QTH-ról. A csúcs körül riasztás is jön.</span><span class="en">The active or next shower, its peak to the hour, the ZHR, and the UTC hours when meteor scatter on 6 and 2 m works from your QTH. With an alert around the peak.</span></p>
+        </div>
+        <div class="feat new">
+          <div class="tag"><span class="hu">újdonság a 0.9.1-ben</span><span class="en">new in 0.9.1</span></div>
+          <h3><span class="hu">Mit jelentenek az értékek?</span><span class="en">What do the values mean?</span></h3>
+          <p><span class="hu">A ? gombbal egyszerű magyarázat jön elő: SFI, Kp, MUF, foF2, LUF, Es, ZHR, színek. A távolság km-ben vagy mérföldben.</span><span class="en">The ? button gives simple explanations: SFI, Kp, MUF, foF2, LUF, Es, ZHR, colours. Distances in km or miles.</span></p>
+        </div>
+        <div class="feat new">
           <div class="tag"><span class="hu">újdonság a 0.9-ben</span><span class="en">new in 0.9</span></div>
           <h3><span class="hu">Shack-kijelző, Raspberry Pi</span><span class="en">Shack display, Raspberry Pi</span></h3>
           <p><span class="hu">Teljes képernyő (F11), a térkép magától körbejár (MUF, foF2, sávok). Raspberry Pi-n kis kijelzőn is elfér, bekapcsoláskor magától indul.</span><span class="en">Full screen (F11) with a map that cycles by itself (MUF, foF2, bands). Fits small Raspberry Pi screens and starts on boot.</span></p>
@@ -379,14 +389,14 @@ footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wr
     <div class="wrap">
       <div class="eyebrow"><span class="hu">Letöltés</span><span class="en">Download</span></div>
       <h2><span class="hu">Ingyenes, telepítés nélkül is fut</span><span class="en">Free, runs without installing</span></h2>
-      <p class="intro"><span class="hu">Jelenlegi változat: 0.9 (Android: 0.8). Nincs regisztráció, nincs reklám, a lokátorod a gépeden marad.</span><span class="en">Current version: 0.9 (Android: 0.8). No registration, no ads, your locator stays on your device.</span> <a href="https://github.com/hg0mv/ionoprop/releases"><span class="hu">Korábbi változatok</span><span class="en">Earlier versions</span></a></p>
+      <p class="intro"><span class="hu">Jelenlegi változat: 0.9.1 (Windows, Linux és Android). Nincs regisztráció, nincs reklám, a lokátorod a gépeden marad.</span><span class="en">Current version: 0.9.1 (Windows, Linux and Android). No registration, no ads, your locator stays on your device.</span> <a href="https://github.com/hg0mv/ionoprop/releases"><span class="hu">Korábbi változatok</span><span class="en">Earlier versions</span></a></p>
 
       <div class="dl">
         <div class="dl-card">
           <div class="sys">Windows 10 / 11 · 64 bit</div>
           <h3>Windows</h3>
           <p><span class="hu">Zip-fájl: kicsomagolod, és elindítod az IonoProp.exe-t. Telepíteni nem kell. Ha a SmartScreen figyelmeztet: „További információ” → „Futtatás mindenképp”.</span><span class="en">A zip file: unpack it and start IonoProp.exe. No installation. If SmartScreen warns: “More info” → “Run anyway”.</span></p>
-          <a class="btn primary" href="https://github.com/hg0mv/ionoprop/releases/download/v0.9/IonoProp-0.9-windows.zip" target="_blank" rel="noopener"><span class="hu">Letöltés (zip)</span><span class="en">Download (zip)</span></a>
+          <a class="btn primary" href="https://github.com/hg0mv/ionoprop/releases/download/v0.9.1/IonoProp-0.9.1-windows.zip" target="_blank" rel="noopener"><span class="hu">Letöltés (zip)</span><span class="en">Download (zip)</span></a>
         </div>
         <div class="dl-card">
           <div class="sys">Ubuntu / Debian / Raspberry Pi OS · X11</div>
@@ -397,7 +407,7 @@ footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wr
   libfreetype-dev libmosquitto-dev
 make &amp;&amp; ./ionoprop-gui</pre>
           <p><span class="hu">Raspberry Pi shack-kijelzőnek: <code>make autostart</code>, és bejelentkezéskor teljes képernyőn indul.</span><span class="en">For a Raspberry Pi shack display: <code>make autostart</code>, and it starts full screen on login.</span></p>
-          <a class="btn" href="https://github.com/hg0mv/ionoprop/releases/download/v0.9/ionoprop-0.9-linux.zip" target="_blank" rel="noopener"><span class="hu">Forrás letöltése</span><span class="en">Download source</span></a>
+          <a class="btn" href="https://github.com/hg0mv/ionoprop/releases/download/v0.9.1/IonoProp-0.9.1-linux.zip" target="_blank" rel="noopener"><span class="hu">Forrás letöltése</span><span class="en">Download source</span></a>
         </div>
         <div class="dl-card play" id="android">
           <div class="badge"><span class="hu">Google Play · zártkörű teszt</span><span class="en">Google Play · closed test</span></div>
@@ -418,7 +428,7 @@ make &amp;&amp; ./ionoprop-gui</pre>
             </ol>
           </div>
           <div class="btns">
-            <a class="btn primary" href="https://github.com/hg0mv/ionoprop/releases/download/v0.9/ionoprop-0.8.apk" target="_blank" rel="noopener"><span class="hu">APK letöltése</span><span class="en">Download APK</span></a>
+            <a class="btn primary" href="https://github.com/hg0mv/ionoprop/releases/download/v0.9.1/ionoprop-0.9.1.apk" target="_blank" rel="noopener"><span class="hu">APK letöltése</span><span class="en">Download APK</span></a>
             <a class="btn" href="https://play.google.com/apps/testing/hu.ionoprop.app" target="_blank" rel="noopener"><span class="hu">Jelentkezem tesztelőnek</span><span class="en">Become a tester</span></a>
           </div>
         </div>
@@ -443,6 +453,21 @@ make &amp;&amp; ./ionoprop-gui</pre>
       <div class="eyebrow"><span class="hu">Változások</span><span class="en">Changes</span></div>
       <h2><span class="hu">Mi történt eddig</span><span class="en">Release history</span></h2>
       <div class="log">
+        <div class="rel">
+          <div class="v">0.9.1<span class="d">2026-11</span></div>
+          <ul class="hu">
+            <li>Meteorraj-naptár: csúcs órára pontosan, ZHR, a rádiáns jó órái, riasztás</li>
+            <li>Magyarázatok az értékekhez (? gomb)</li>
+            <li>Távolság km-ben vagy mérföldben</li>
+            <li>Kíméletesebb letöltés a KC2G-ről</li>
+          </ul>
+          <ul class="en">
+            <li>Meteor shower calendar: peak to the hour, ZHR, best radiant hours, alerts</li>
+            <li>Explanations of the values (? button)</li>
+            <li>Distances in km or miles</li>
+            <li>Gentler downloading from KC2G</li>
+          </ul>
+        </div>
         <div class="rel">
           <div class="v">0.9<span class="d">2026-11</span></div>
           <ul class="hu">
@@ -548,7 +573,7 @@ make &amp;&amp; ./ionoprop-gui</pre>
       <div class="call">73 de HG0MV</div>
       <div>QTH KN07sp · <a href="mailto:qsl@hg0mv.hu"><span class="hu">E-mail küldése</span><span class="en">Send email</span></a> · <a href="https://ko-fi.com/hg0mv" target="_blank" rel="noopener"><span class="hu">Támogatás</span><span class="en">Support</span></a></div>
     </div>
-    <div><span class="hu">IonoProp 0.9 · ingyenes rádióamatőr program</span><span class="en">IonoProp 0.9 · free amateur radio software</span></div>
+    <div><span class="hu">IonoProp 0.9.1 · ingyenes rádióamatőr program</span><span class="en">IonoProp 0.9.1 · free amateur radio software</span></div>
   </div>
 </footer>
 

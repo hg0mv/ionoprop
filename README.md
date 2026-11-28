@@ -1,6 +1,6 @@
 # IonoProp 0.9.1 – ionosphere map, HF band advisor, checked against real spots
 
-*Magyar leírás: [README.md](README.md)*
+*Magyar leírás: [README.hu.md](README.hu.md)*
 
 IonoProp shows the state of the ionosphere and tells radio amateurs which
 HF band is open, and where to. It downloads current ionosonde and solar
@@ -9,6 +9,13 @@ advice for 15 target areas (plus any you add), from 160 m up to 6 m.
 
 It runs on Linux (including Raspberry Pi), Windows and Android, and is
 free, with no ads and no registration.
+
+![IonoProp](img/asztali.jpg)
+
+**Download:** [Releases](https://github.com/hg0mv/ionoprop/releases) ·
+**Website:** https://hg0mv.github.io/ionoprop/ ·
+**Guide:** [Wiki](https://github.com/hg0mv/ionoprop/wiki) ·
+**Support:** [Ko-fi](https://ko-fi.com/hg0mv)
 
 ## What it downloads
 
@@ -355,6 +362,18 @@ PSK Reporter check (see above).
   grey line and long path, 11 m, Yaesu CAT
 - **0.6:** sporadic E, better model for high MUFs, Kp forecast
 - **0.5:** 8 m and 6 m, MUF scale up to 50 MHz, Windows version
+
+## License
+
+IonoProp is free software: you can use, copy, modify and share it under the
+terms of the **GNU General Public License 3.0** (GPL-3.0). If you share a
+modified version, you must publish its source under GPL-3.0 too. Full text:
+[LICENSE](LICENSE).
+
+Copyright © 2026 HG0MV
+
+Third-party parts: cJSON (MIT license, `third_party/cJSON-LICENSE`),
+Natural Earth map data (public domain).
 
 ## Data sources
 
